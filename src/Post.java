@@ -78,6 +78,7 @@ import java.util.List;
                  '}';
      }
 
+     //
      private String showPost() {
          return "Post: \n "
                  +" Title: " + this.title
