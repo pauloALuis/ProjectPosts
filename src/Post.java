@@ -8,7 +8,7 @@ import java.util.List;
     private String title;
     private String content;
     private int likes =0;
-    private List<Comment>  listComments ;//= new List<Comment>();
+    private List<Comment>  listComments ;
 
 
      public Date getDatePost() {
@@ -59,6 +59,7 @@ import java.util.List;
         this.listComments = new ArrayList<Comment>();
     }
 
+    //show all comments association in Post
     public String showPostWithComment(){
         var comment = "";
         for (var item:this.listComments   ) {
@@ -78,7 +79,7 @@ import java.util.List;
                  '}';
      }
 
-     //
+     // print post
      private String showPost() {
          return "Post: \n "
                  +" Title: " + this.title
